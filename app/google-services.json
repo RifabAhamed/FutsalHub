@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525274294521",
+    "project_id": "futsalhub-bcf96",
+    "storage_bucket": "futsalhub-bcf96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525274294521:android:f519021085a758a21e9a28",
+        "android_client_info": {
+          "package_name": "com.example.futsalhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbWvMMXrDim5xza1n6QufdeEkULwBM2Gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

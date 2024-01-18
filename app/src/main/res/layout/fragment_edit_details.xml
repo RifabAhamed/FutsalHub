@@ -1,0 +1,374 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgblack">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvEditDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/gotham_medium_"
+        android:text="Edit Details"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfEditGroundName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="Edit Ground Name"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditDetails"
+            app:layout_constraintVertical_bias="0.013">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEditGroundName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfEditGroundLocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Edit Ground Location"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:helperTextTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfEditGroundName"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditGroundLocation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium_"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvAddTimeslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:text="Add Timeslot"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEditDetails"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfEditGroundDescription"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Edit Ground Description"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:helperTextTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfEditGroundLocation"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditGroundDescription"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/gotham_medium_"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfAddDate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="dd-MM-yyyy"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddTimeslot"
+            app:layout_constraintVertical_bias="0.045">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddDate"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfRemoveTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="HH:mm"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRemoveTimeslot"
+            app:layout_constraintVertical_bias="0.15">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRemoveTime"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/gotham_medium_"
+            android:text="REMOVE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfRemoveTime"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfAddPrice"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfAddDate"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddPrice"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/gotham_medium_"
+            android:text="ADD"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.745" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfRemoveDate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="dd-MM-yyyy"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRemoveTimeslot"
+            app:layout_constraintVertical_bias="0.15">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRemoveDate"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfAddTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="HH:mm"
+            android:textColorHint="@color/light_white"
+            app:boxBackgroundColor="@color/grey"
+            app:boxStrokeColor="@color/grey"
+            app:boxStrokeErrorColor="@color/light_white"
+            app:cursorColor="@color/light_white"
+            app:cursorErrorColor="@color/light_white"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/light_white"
+            app:errorTextColor="@color/green"
+            app:helperTextTextColor="@color/green"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddTimeslot"
+            app:layout_constraintVertical_bias="0.045">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddTime"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium_"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEditDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:clickable="false"
+            android:fontFamily="@font/gotham_medium_"
+            android:text="UPDATE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.818"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/tvRemoveTimeslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/gotham_book"
+            android:text="Remove Timeslot"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.204"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfAddPrice"
+            app:layout_constraintVertical_bias="0.14" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

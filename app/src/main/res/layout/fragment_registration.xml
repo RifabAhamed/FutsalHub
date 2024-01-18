@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgblack">
+
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        android:fontFamily="@font/gotham_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfRegisterName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham_medium_" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfRegisterEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham_medium_" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfRegisterPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham_medium_" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfRegisterConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="CONFIRM PASSWORD"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegisterConfirmPassword"
+            android:layout_width="300dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham_medium_" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:fontFamily="@font/gotham_medium_"
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="register"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:iconSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <TextView
+        android:id="@+id/tvBottomSignIn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_book"
+        android:text="Already have an account? "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_book"
+        android:text="Sign In"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvBottomSignIn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/tvGroundName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/gotham_medium_"
+            android:maxLines="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="GroundName"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvGroundRating"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvGroundName"
+            android:background="@drawable/round_corner"
+            android:drawableLeft="@drawable/ic_star"
+            android:fontFamily="@font/gotham_book"
+            android:text="Rating"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/tvGroundLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGroundName"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:fontFamily="@font/gotham_book"
+            android:maxLines="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="Location"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

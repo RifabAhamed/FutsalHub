@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <navigation android:id="@+id/home"
+        app:startDestination="@id/listScreen">
+        <fragment
+            android:id="@+id/listScreen"
+            android:name="com.example.futsalhub.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home">
+            <action
+                android:id="@+id/action_listScreen_to_groundScreen"
+                app:destination="@id/groundScreen" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/groundScreen"
+            android:tag="groundScreenTag"
+            android:name="com.example.futsalhub.GroundFragment"
+            android:label="fragment_bookground"
+            tools:layout="@layout/fragment_ground" >
+            <action
+                android:id="@+id/action_groundScreen_to_paymentFragment"
+                app:destination="@id/paymentFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/paymentFragment"
+            android:name="com.example.futsalhub.PaymentFragment"
+            android:label="fragment_payment"
+            tools:layout="@layout/fragment_payment" />
+    </navigation>
+
+
+    <navigation android:id="@+id/history"
+        app:startDestination="@id/bookingHistoryScreen">
+        <fragment
+            android:id="@+id/bookingHistoryScreen"
+            android:name="com.example.futsalhub.BookingHistoryFragment"
+            android:label="fragment_booking_history"
+            tools:layout="@layout/fragment_booking_history" />
+    </navigation>
+
+
+    <navigation android:id="@+id/profile"
+        app:startDestination="@id/profileScreen">
+        <fragment
+            android:id="@+id/profileScreen"
+            android:name="com.example.futsalhub.ProfileFragment"
+            android:label="fragment_profile"
+            tools:layout="@layout/fragment_profile" >
+            <action
+                android:id="@+id/action_profileScreen_to_editProfileFragment"
+                app:destination="@id/editProfileFragment" />
+            <action
+                android:id="@+id/action_profileScreen_to_termsAndConditionsFragment"
+                app:destination="@id/termsAndConditionsFragment" />
+            <action
+                android:id="@+id/action_profileScreen_to_contactUsFragment"
+                app:destination="@id/contactUsFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/editProfileFragment"
+            android:name="com.example.futsalhub.EditProfileFragment"
+            android:label="fragment_edit_profile"
+            tools:layout="@layout/fragment_edit_profile" />
+        <fragment
+            android:id="@+id/termsAndConditionsFragment"
+            android:name="com.example.futsalhub.TermsAndConditionsFragment"
+            android:label="fragment_terms_and_conditions"
+            tools:layout="@layout/fragment_terms_and_conditions" />
+        <fragment
+            android:id="@+id/contactUsFragment"
+            android:name="com.example.futsalhub.ContactUsFragment"
+            android:label="fragment_contact_us"
+            tools:layout="@layout/fragment_contact_us" />
+    </navigation>
+
+</navigation>

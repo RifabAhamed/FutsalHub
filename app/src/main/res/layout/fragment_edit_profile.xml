@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgblack"
+    tools:context=".EditProfileFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfCurrentPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter current password"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCurrentPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium_"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfEditName"
+        android:layout_width="300dp"
+        android:hint="Edit Name"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:helperTextTextColor="@color/green"
+        app:layout_constraintVertical_bias="0.134">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium_"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfEditPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter new password"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium_"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfConfirmPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Re-enter new password"
+        android:textColorHint="@color/light_white"
+        app:boxBackgroundColor="@color/grey"
+        app:boxStrokeColor="@color/grey"
+        app:boxStrokeErrorColor="@color/light_white"
+        app:cursorColor="@color/light_white"
+        app:cursorErrorColor="@color/light_white"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/light_white"
+        app:errorTextColor="@color/green"
+        app:helperTextTextColor="@color/green"
+        app:hintTextColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_medium_"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"
+        android:clickable="false"
+        android:fontFamily="@font/gotham_medium_"
+        android:text="UPDATE NAME"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/btnEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_medium_"
+        android:text="UPDATE PASSWORD"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

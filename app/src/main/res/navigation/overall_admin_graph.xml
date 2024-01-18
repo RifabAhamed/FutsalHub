@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/overall_admin_graph"
+    app:startDestination="@id/overallAdminDashboard">
+
+    <fragment
+        android:id="@+id/overallAdminDashboard"
+        android:name="com.example.futsalhub.OverallAdminDashboard"
+        android:label="fragment_overall_admin_dashboard"
+        tools:layout="@layout/fragment_overall_admin_dashboard" >
+        <action
+            android:id="@+id/action_overallAdminDashboard_to_addGroundFragment"
+            app:destination="@id/addGroundFragment" />
+        <action
+            android:id="@+id/action_overallAdminDashboard_to_removeGroundFragment"
+            app:destination="@id/removeGroundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGroundFragment"
+        android:name="com.example.futsalhub.AddGroundFragment"
+        android:label="fragment_add_ground"
+        tools:layout="@layout/fragment_add_ground" />
+    <fragment
+        android:id="@+id/removeGroundFragment"
+        android:name="com.example.futsalhub.RemoveGroundFragment"
+        android:label="fragment_remove_ground"
+        tools:layout="@layout/fragment_remove_ground" />
+</navigation>
